@@ -323,21 +323,31 @@ Integrated iOS SDK includes the following contents:
       return [UIColor whiteColor];
   }
   
+  ```
+  
 
-VI. Create native ads
-1）	Complete Delegate of native ads in where need to insert native ads. If you use native ads in different interface, you can complete AppDelegate only one time, and provide external method to call positions.
+##VI. Create native ads
+
+1）Complete Delegate of native ads in where need to insert native ads. If you use native ads in different interface, you can complete AppDelegate only one time, and provide external method to call positions.
+
+```
   #import "AdNativeManager.h"
   #import "AdNativeManagerDelegate.h"
-  @interface ShowNativeViewController
-()<AdNativeManagerDelegate>
-  @property (nonatomic,strong) AdNativeManager
-*nativeManager;
+  @interface ShowNativeViewController()<AdNativeManagerDelegate>
+  
+  @property (nonatomic,strong) AdNativeManager *nativeManager;
+  
+  @end
+  
+  ```
 
 2）Complete native Delegate as the below codes：
-  - (void)requestNativeAdSuccessed:(AdNativeManager*)manager adInfo:(NSArray*)adviewNativeAdArray{
+
+```
+ - (void)requestNativeAdSuccessed:(AdNativeManager*)manager adInfo:(NSArray*)adviewNativeAdArray{
        self.adArr = adviewNativeAdArray;
        self.adCountIndex = 0;
-       self.label.text = @"请求广告成功";
+       self.label.text = @"Request ad is successful";
        [self createNativeAdView];
 } 
 - (BOOL)adNativeTestMode{
@@ -347,12 +357,18 @@ VI. Create native ads
     return YES;
 }
 
+```
+
 3）Create AdNativeManager in the viewDidLoad function of the controller，as be below codes:
-31.	- (void)viewDidLoad
-32.	{
-33.	    [super viewDidLoad];
-           self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegate:self]; 
+
+```
+- (void)viewDidLoad
+{
+[super viewDidLoad];
+self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegate:self]; 
 }
+
+```
 
 
 4）Add ad load codes in the proper position, as the below codes show: 
@@ -904,7 +920,6 @@ XI.Configurate files offline	31
 XII.Delete the unnecessary ad platforms	31
 XIII.Add customized ad platform (interstitial)	32
 XIV. FAQ	37
- 
 
 I.	Register and get SDK
 1.	Visit AdView’s website http://www.adview.cn to register an account.

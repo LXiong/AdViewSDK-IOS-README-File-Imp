@@ -232,6 +232,7 @@ Integrated iOS SDK includes the following contents:
   ```
 
   V. Create open screen ads
+  
   1）Insert  open screen object in AppDelegate and the generate the  open screen object, as the below codes: 
   
   ```
@@ -372,52 +373,67 @@ self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegat
 
 
 4）Add ad load codes in the proper position, as the below codes show: 
+
+```
 - (IBAction)requestAd:(id)sender {
     if (self.adIndex) {
-        [nativeManager loadSingleAdNative:3
-withIndex:self.adIndex];
-}else{ 
+        [nativeManager loadSingleAdNative:3 withIndex:self.adIndex];
+    }else{ 
         [nativeManager loadNativeAd:3];
     }
-}
+ }
+
+```
 
 5）Add ad impression report codes in proper position:
+
+```
 - (void)adNativeShow:(id)sender 
 {
-         AdViewNativeAdInfo *info = [self.adArr objectAtIndex:self.adCountIndex];
-    UIImage *iconImage = [UIImage imageWithData:[NSData
-dataWithContentsOfURL:[NSURL URLWithString:[info.nativeAdDict
-objectForKey:AdViewNativeAdIconUrl]]]];
-UIImageView *iconImgView = [[UIImageView alloc] initWithImage:iconImage];
-
+   AdViewNativeAdInfo *info = [self.adArr objectAtIndex:self.adCountIndex];
+   UIImage *iconImage = [UIImage imageWithData:[NSData
+   dataWithContentsOfURL:[NSURL URLWithString:[info.nativeAdDict objectForKey:AdViewNativeAdIconUrl]]]];
+   UIImageView *iconImgView = [[UIImageView alloc] initWithImage:iconImage];
    [showView addSubview:iconImgView];
    [info showNativeAdWith:showView]; 
 } 
 
+```
+
 6） Add ad click report codes in proper position: 
+
+```
 - (void)click{
-    [[self.adArr objectAtIndex:self.adCountIndex]
-clickNativeAd];
+    [[self.adArr objectAtIndex:self.adCountIndex]clickNativeAd];
 }
 
+```
+
 VII.Create video ads
-1）	Complete Delegate of  the video in where need to insert video. If you use video in different interface, you can complete only one time in AppDelegate object, and provide external method to call positions.
+
+1)Complete Delegate of  the video in where need to insert video. If you use video in different interface, you can complete only one time in AppDelegate object, and provide external method to call positions.
+
+```
 #import "AdVideoManager.h"
 #import "AdVideoManagerDelegate.h"
-  @interface VideoViewController
-()<AdVideoManagerDelegate>
-  @property (nonatomic,strong) AdVideoManager
-*videoManger;
+  @interface VideoViewController()<AdVideoManagerDelegate>
+      @property (nonatomic,strong) AdVideoManager *videoManger;
+  @end
+  
+  ```
 
 2）Complete videoDelegate，as the below codes show：
+
+```
  /**
- * 信息回调
+ * Information callback
  */
+ 
 - (void)adVideoManager:(AdVideoManager*)manager didGetEvent:(VideoEventType)eType error:(NSError*)error{
     if (eType == VideoEventType_DidLoadAd) {
         [manager showVideoAdWithController:[UIApplication sharedApplication].keyWindow.rootViewController];
     }
-}
+ }
 
 /**
  *
@@ -431,29 +447,42 @@ VII.Create video ads
     return NO;
 }
 
+
 /**
- * 是否打开日志模式，缺省为NO
+ * Whether to open the log mode, the default is NO
  */
 - (BOOL)adVideoLogMode{
     return YES;
 }
 
+```
+
+
 3）Create AdVideoManager in the viewDidLoad function of the controller, as the below codes show:
+
+```
 - (void)viewDidLoad
 {
     [super viewDidLoad];
            self.videoManger = [AdVideoManager managerWithAdVideoKey:NATIVEKEY WithDelegate:self]; 
 }
 
+```
+
 4）Add ad load codes in proper position: 
+
+```
 - (void)showVideo
 {
     [self.videoManger loadVideoAd:self];
 }
+```
 
 5）Add ad dislplay and report codes in proper position: 
+
+```
 /**
- * 信息回调
+ * Information callback
  */
 - (void)adVideoManager:(AdVideoManager*)manager didGetEvent:(VideoEventType)eType error:(NSError*)error{
     if (eType == VideoEventType_DidLoadAd) {
@@ -461,64 +490,60 @@ VII.Create video ads
     }
 }
 
+```
+
 VIII.Create direct advertising, exchanging advertising and  their campaigns
-1.	Login Adview’s official website and enter publishers end,  Ads management → creative database：
 
-
-2.	Click ”Create creatives” button and enter the information needed. When create H5 ads, you must add the <a href=””></a> tag in HTML codes, otherwise no clicks will be triggered after the ads are shown. Take direct ad for example:
-
-
-
-3.	Enter the interface of creating direct ads and fill in the information.
+1.Login Adview’s official website and enter publishers end,  Ads management → creative database：
+2.Click ”Create creatives” button and enter the information needed. When create H5 ads, you must add the <a href=””></a> tag in HTML codes, otherwise no clicks will be triggered after the ads are shown. Take direct ad for example:
+3.Enter the interface of creating direct ads and fill in the information.
  Once saved, your direct ad is finished created. 
+4.Now you can see the direct ad created in the ads management, you just have to wait for our staff to audit your ad. Once approved you can start your campaign.
+5.Enter the campaign interface, click setting and start your campaign（投The release amount must reach 100%）.
+6)The steps of creating exchanging ad is the same as the direct ad. 
 
-4.	Now you can see the direct ad created in the ads management, you just have to wait for our staff to audit your ad. Once approved you can start your campaign.
+##IX.Configurate Xcode project
 
+1.set the value of Other Linker Flags in the project , and tag “-ObjC”
+2.add AdViewSDK  and the framework needed  in your project.	
+    --> libsqlite3.tbd
+    -->libz.tbd
+    -->libc++.tbd —Optional
+    -->Metal.framework —Optional
+    -->MapKit.framework
+    -->MobileCoreServices.framework
+    -->libstdc++.tbd —Optional
+    -->PassKit.framework —Optional
+    -->Social.framework —Optional
+    -->AudioToolbox.framework
+    -->AddressBook.framework
+    -->AVFoundation.framework
+    -->AdSupport.framework--Optional
+    -->CoreGraphics.framework
+    -->CoreLocation.framework
+    -->CoreMedia.framework
+    -->CoreMotion.framework
+    -->CoreTelephony.framework
+    -->CoreVideo.framework
+    -->ImageIO.framework
+    -->MediaPlayer.framework
+    -->MessageUI.framework
+    -->QuartzCore.framework
+    -->EventKit.framework
+    -->EventKitUI.framework
+    -->Foundation.framework
+    -->Security.framework
+    -->StoreKit.framework--Optional
+    -->SystemConfiguration.framework
+    -->UIKit.framework
+    -->Twitter.framework
+    -->AssetsLibrary.framework
+    -->Accounts.framework
+    -->WebKit.framework
+    -->libxml2.tbd
 
-5.	Enter the campaign interface, click setting and start your campaign（投The release amount must reach 100%）.
-
-6）The steps of creating exchanging ad is the same as the direct ad. 
-
-IX.Configurate Xcode project
-1.	set the value of Other Linker Flags in the project , and tag “-ObjC”
-2.	add AdViewSDK  and the framework needed  in your project.	
-        ·libsqlite3.tbd
-	·libz.tbd
-	·libc++.tbd —Optional
-	·Metal.framework —Optional
-·MapKit.framework
-·MobileCoreServices.framework
-·libstdc++.tbd —Optional
-·PassKit.framework —Optional
-·Social.framework —Optional
-·AudioToolbox.framework
-·AddressBook.framework
-·AVFoundation.framework
-·AdSupport.framework--Optional
-·CoreGraphics.framework
-·CoreLocation.framework
-·CoreMedia.framework
-·CoreMotion.framework
-·CoreTelephony.framework
-·CoreVideo.framework
-·ImageIO.framework
-·MediaPlayer.framework
-·MessageUI.framework
-·QuartzCore.framework
-·EventKit.framework
-·EventKitUI.framework
-·Foundation.framework
-·Security.framework
-·StoreKit.framework--Optional
-·SystemConfiguration.framework
-·UIKit.framework
-·Twitter.framework
-·AssetsLibrary.framework
-·Accounts.framework
-·WebKit.framework
-	·libxml2.tbd
-
-Note: the below contents are the framework needed by various ad platforms ( framework of Adview must add)
+**Note:**
+the below contents are the framework needed by various ad platforms ( framework of Adview must add)
 
 Ad platform
 Famework

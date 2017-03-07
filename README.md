@@ -59,6 +59,12 @@
 
 Integrated iOS SDK includes the following contents:
 
+	|   File or category name                   | Intruductions                               |
+        | -------------                             | ------------------------------------------- |
+        |       AdView                              |  AdView  integrated SDK development kit     |
+        |      AdNetworks                           | Interstitial ad development kit supported   |
+	|                                           |                       by integrated SDK     |
+
 
         |             File or category name             |                 Intruductions                          |
         | --------------------------------------------- | ------------------------------------------------------ |                   |                 AdView                        |          AdView  integrated SDK development kit        |                   |               AdNetworks                      |        Interstitial ad development kit supported       |

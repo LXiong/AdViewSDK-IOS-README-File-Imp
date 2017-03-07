@@ -2,24 +2,23 @@
 
 
 ##Contents
-  I.Register and get SDK	
-  II.Add  SDK	
-  III.Create banner ads	
-  IV.Create interstitial ads	
-  V.Create open screen ads	
-  VI. Create native ads	
-  VII.Create video ads	
-  VIII.Create direct advertising, exchanging advertising and  their campaigns	
-  IX.Configurate Xcode project
-  X. AdView background app settings	
-  XI.Configurate files offline	
-  XII.Delete the unnecessary ad platforms	
-  XIII.Add customized ad platform (interstitial)	
-  XIV.FAQ	
+[I.Register and get SDK]
+[II.Add  SDK]	
+[III.Create banner ads]	
+[IV.Create interstitial ads]	
+[V.Create open screen ads]	
+[VI. Create native ads]	
+[VII.Create video ads]	
+[VIII.Create direct advertising, exchanging advertising and  their campaigns]	
+[IX.Configurate Xcode project]
+[X. AdView background app settings]	
+[XI.Configurate files offline]
+[XII.Delete the unnecessary ad platforms]	
+[XIII.Add customized ad platform (interstitial)]	
+[XIV.FAQ]	
 
 
 
- 
 
 ##I.	Register and get SDK
 
@@ -726,17 +725,17 @@ systemconfiguration.framework
 CoreMotion.framework         libz.tbd
 libsqlite3.tbd
 
-3.	When adding SDK, some documents are repeatedly used, you need to delect the repeatedly used documents or do not compile them. The repeated documents includes: OpenUDID.m 、ZipArchive.m 、zip.m 、unzip.m 、mztools.c  ioapi.c  and Reachbility.m。
-4.	Configurate your ads’ interstitial priorities and propotions in AdView’s website.
-5.	Compile and connect your project and the interstitial can be shown.
+3.When adding SDK, some documents are repeatedly used, you need to delect the repeatedly used documents or do not compile them.The repeated documents includes: OpenUDID.m 、ZipArchive.m 、zip.m 、unzip.m 、mztools.c  ioapi.c  and Reachbility.m。
+4.Configurate your ads’ interstitial priorities and propotions in AdView’s website.
+5.Compile and connect your project and the interstitial can be shown.
 X. AdView background app settings
-1)	 app settings
+1)app settings
 
 
-2)	Select ad platform
+2)Select ad platform
  
 
-3)	Add ad platform
+3)Add ad platform
 Select the platform you want
 
 
@@ -744,7 +743,7 @@ Select the platform you want
 
 
 
-4)	Configuration ad platform
+4)Configuration ad platform
 
 1、APP ID settings：publisher should sign up in relevant  ad platfroms to get the corresponding app information. Since the interfaces of different platforms are different , usually you just need to enter App ID, sometimes may need to enter other information. 
 2、switch：Only when the switch is on will the ad be shown. Publishers can shift different  ad platforms.

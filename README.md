@@ -3,19 +3,32 @@
 
 ##Contents
 [I.Register and get SDK](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#i----register-and-get-sdk)
+
 [II.Add  SDK](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#ii---add--sdk)	
-[III.Create banner ads]	
-[IV.Create interstitial ads]	
-[V.Create open screen ads]	
-[VI. Create native ads]	
-[VII.Create video ads]	
-[VIII.Create direct advertising, exchanging advertising and  their campaigns]	
-[IX.Configurate Xcode project]
-[X. AdView background app settings]	
-[XI.Configurate files offline]
-[XII.Delete the unnecessary ad platforms]	
-[XIII.Add customized ad platform (interstitial)]	
-[XIV.FAQ]	
+
+[III.Create banner ads](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#iiicreate-banner-ads)	
+
+[IV.Create interstitial ads](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#ivcreate-interstitial-ads)
+
+[V.Create open screen ads](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#v-create-open-screen-ads)
+
+[VI. Create native ads](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#vi-create-native-ads)
+
+[VII.Create video ads](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#viicreate-video-ads)	
+
+[VIII.Create direct advertising, exchanging advertising and  their campaigns](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#viiicreate-direct-advertising-exchanging-advertising-and--their-campaigns)
+
+[IX.Configurate Xcode project](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#ixconfigurate-xcode-project)
+
+[X. AdView background app settings]()	
+
+[XI.Configurate files offline](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#xiconfigurate-files-offline)
+
+[XII.Delete the unnecessary ad platforms](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#xiidelete-the-unnecessary-ad-platforms)	
+
+[XIII.Add customized ad platform (interstitial)](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#xiiiadd-customized-ad-platform-interstitial)	
+
+[XIV.FAQ](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#xiv-faq)	
 
 
 
@@ -728,7 +741,8 @@ libsqlite3.tbd
 3.When adding SDK, some documents are repeatedly used, you need to delect the repeatedly used documents or do not compile them.The repeated documents includes: OpenUDID.m 、ZipArchive.m 、zip.m 、unzip.m 、mztools.c  ioapi.c  and Reachbility.m。
 4.Configurate your ads’ interstitial priorities and propotions in AdView’s website.
 5.Compile and connect your project and the interstitial can be shown.
-X. AdView background app settings
+
+##X. AdView background app settings
 1)app settings
 
 

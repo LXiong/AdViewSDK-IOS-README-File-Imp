@@ -22,15 +22,15 @@
 
 ##I.	Register and get SDK
 
-1.	Visit AdView’s website http://www.adview.com to register an account.
-2.	Login and select “Publise app” in “My Product” 
-3.	Select “iOS” as application platform, complete the relative information according to the prompts and you will get the unique SDK key.
+1.Visit AdView’s website http://www.adview.com to register an account.
+2.Login and select “Publise app” in “My Product” 
+3.Select “iOS” as application platform, complete the relative information according to the prompts and you will get the unique SDK key.
 
-4.	Configurate your app in “App Management” , enter the ad ID of the platform in “unset” , turn on the switch , set the total ad amout to 100%, then save. If more platfomrs are needed, click “add ad platform”  in the upper right conner. We suggest the amout of the platform is usually 1 to 3.
+4.Configurate your app in “App Management” , enter the ad ID of the platform in “unset” , turn on the switch , set the total ad amout to 100%, then save. If more platfomrs are needed, click “add ad platform”  in the upper right conner. We suggest the amout of the platform is usually 1 to 3.
 
-5.	Home-> iOS SDK download, or App Management -> iOS SDK download, you can get AdViewSDK iOS kit there.
+5.Home-> iOS SDK download, or App Management -> iOS SDK download, you can get AdViewSDK iOS kit there.
 
-6.	Integrated iOS SDK is a mobile ad optimizer specially provide to iOS developers for free, aiming at helping developers easily maximize their ad revenues. Based on the App mutual push of ad integration, it helps increasing users for the apps rapidly. At the meantime we combine with lots of ad platforms and app stores, opening a green channel to serve the developers.
+6.Integrated iOS SDK is a mobile ad optimizer specially provide to iOS developers for free, aiming at helping developers easily maximize their ad revenues. Based on the App mutual push of ad integration, it helps increasing users for the apps rapidly. At the meantime we combine with lots of ad platforms and app stores, opening a green channel to serve the developers.
 
 Integrated iOS SDK includes the following contents:
 
@@ -440,7 +440,7 @@ VII.Create video ads
 - (void)adVideoManager:(AdVideoManager*)manager videoAvailable:(BOOL)avilable{}
 
 /**
- * 是否打开测试模式，缺省为NO
+ * Whether to open the test mode, the default is NO
  */
 - (BOOL)adVideoTestMode{
     return NO;
@@ -748,14 +748,12 @@ Select the platform you want
 1、APP ID settings：publisher should sign up in relevant  ad platfroms to get the corresponding app information. Since the interfaces of different platforms are different , usually you just need to enter App ID, sometimes may need to enter other information. 
 2、switch：Only when the switch is on will the ad be shown. Publishers can shift different  ad platforms.
 3、capacity：Only when the switch is on will the campaign make sense. Capacity is the request proportion to the ad platform. When shift ad platform，the capacity should be adjusted at the same time. The total capacity of  ads whose status are on should be 100, otherwise cannot be saved correctly.
-5)	Region optimization
-
-
+5)**Region optimization**
 Region optimization fuction refers to the phones at home show the domestic configurated ads, while phones at abroad show the foreing configurated ads, meeting the different demands to the largest extent. When region optimizaiton is off, it will not tell apart at home or at abroad.
-XI.Configurate files offline
-(1) download offline configurated 
 
-files
+##XI.Configurate files offline
+
+1) download offline configurated files
 
 	(2) put themt into project catagorie
 
@@ -783,19 +781,22 @@ There is “ customize ad platform” in “add ad platform”
 Publisher should register in relevant platforms first to get the corresponding app information. Since the interfaces of different ad platforms are different, usually you just need to enter app ID, some may need to enter other information. If not, you can randomly enter any characters.
 
 Codes for reference
-1.	Add the  SDK of which platform you would like to  add  to AdNetwork of Xcode.
+1.Add the  SDK of which platform you would like to  add  to AdNetwork of Xcode.
 
-2.	Create  the category of AdInstlAdNetworkAdapter and complete its Delegate
+2.Create  the category of AdInstlAdNetworkAdapter and complete its Delegate
+
+```
 #import "AdInstlAdNetworkAdapter.h"
 #import <Walker/GuInitServer.h>
 #import <Walker/PobAppFrame.h>
 @interface AdInstlAdapterXingYun : AdInstlAdNetworkAdapter<PobAppFrameDelegate>
-
-@property (nonatomic, weak) UIViewController *rootController;
-@property (nonatomic, strong) GuInitServer * gunInitServer;
-@property (nonatomic, strong) PobAppFrame  * pobAppFrame;
+   @property (nonatomic, weak) UIViewController *rootController;
+   @property (nonatomic, strong) GuInitServer * gunInitServer;
+   @property (nonatomic, strong) PobAppFrame  * pobAppFrame;
 @end
-two ways to complete: one is networkType（to get channel ID, for customized ad usuallly return AdInstlAdNetworkTypeUserDefined）. Another one is Load
+
+```
+//two ways to complete: one is networkType（to get channel ID, for customized ad usuallly return AdInstlAdNetworkTypeUserDefined）. Another one is Load
 + (AdInstlAdNetworkType)networkType
 {
     return AdInstlAdNetworkTypeXingYun;

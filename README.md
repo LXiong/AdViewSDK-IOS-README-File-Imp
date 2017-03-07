@@ -43,9 +43,17 @@
 
 4.Configurate your app in “App Management” , enter the ad ID of the platform in “unset” , turn on the switch , set the total ad amout to 100%, then save. If more platfomrs are needed, click “add ad platform”  in the upper right conner. We suggest the amout of the platform is usually 1 to 3.
 
+![SDK key](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/1.1.png)
+
+
 5.Home-> iOS SDK download, or App Management -> iOS SDK download, you can get AdViewSDK iOS kit there.
 
+![SDK key](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/1.2.png)
+
+
 6.Integrated iOS SDK is a mobile ad optimizer specially provide to iOS developers for free, aiming at helping developers easily maximize their ad revenues. Based on the App mutual push of ad integration, it helps increasing users for the apps rapidly. At the meantime we combine with lots of ad platforms and app stores, opening a green channel to serve the developers.
+
+![SDK files](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/1.3.png)
 
 Integrated iOS SDK includes the following contents:
 
@@ -80,9 +88,14 @@ Integrated iOS SDK includes the following contents:
   7.	Region optimization：To use region optimization function, the phones at home will show the domestic configurated ads while the phones at aborad will show the foreign configurated ads, thus to meet the different demands to the largest extent. When the region optimizaiton is off, it will not tell apart at home or at abroad.
   
   8.	If you use video ads, create video ad slot as the image: ( the same for native ads)
-  Note：① remember to click “save” after completing video ad slot.
-        ② the successfully created app will generate “video ad slot ID” (the video biding ad in the integration function do not need to fill in ad slot ID). 
+  **Note:**
+  ① remember to click “save” after completing video ad slot.
+  ② the successfully created app will generate “video ad slot ID” (the video biding ad in the integration function do not need to fill in ad slot ID). 
     Position of video ad slot ID: App Management— edit – video ad slot module
+    
+    
+    ![Video](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/1.4.png)
+    
     
     
 ##II.Add  SDK
@@ -90,12 +103,22 @@ Integrated iOS SDK includes the following contents:
   It’s easy to integrate the integrated SDK in a project, usually you can integrate AdInstl into your project by the following steps:
   
   1）Get AdViewSDK development kit from the website and unzip it in Finder. You will see the unzipped AdViewSDK in Finder just like the image shows:
+  
+  ![SDK Zip](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/2.1.png)
+  
 
   2）Open your project in Xcode, here we take the AdViewAll project along with AdViewSDK as an example.
+  
+    ![SDK Zip](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/2.2.png)
 
-  3）Drag the AdViewSDK catalog into the AdViewAll project in the Finder.      
+  3）Drag the AdViewSDK catalog into the AdViewAll project in the Finder.   
+  
+  ![Drag SDK](https://github.com/vinith-cit/images-for-ios-SDK/blob/master/2.3.png)
+  
 
   4）Select  “Copy items into destination group’s folder (if needed)” in the pop-up dialog，and AdViewSDK will be added to your project after finish like the image shows:
+  
+  ![AdView SDK](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/2.4.png)
 
   5）Some platforms have some restrictions for Xcode version or SDK version, if you can’t meet the demands please don’t connect the platform.
 
@@ -518,13 +541,20 @@ self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegat
 
 1.Login Adview’s official website and enter publishers end,  Ads management → creative database：
 
+![Create DB](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/7.1.png)
+
 2.Click ”Create creatives” button and enter the information needed. When create H5 ads, you must add the <a href=””></a> tag in HTML codes, otherwise no clicks will be triggered after the ads are shown. Take direct ad for example:
 
+![Comment Box](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/7.2.png)
+
 3.Enter the interface of creating direct ads and fill in the information. Once saved, your direct ad is finished created. 
+![Editig](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/7.3.png)
 
 4.Now you can see the direct ad created in the ads management, you just have to wait for our staff to audit your ad. Once approved you can start your campaign.
+![Application](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/7.4.png)
 
 5.Enter the campaign interface, click setting and start your campaign（投The release amount must reach 100%）.
+![Percentage](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/7.5.png)
 
 6)The steps of creating exchanging ad is the same as the direct ad. 
 
@@ -801,15 +831,22 @@ libsqlite3.tbd
 
 1)app settings
 
+![App Setting](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/10.1.png)
+
 
 2)Select ad platform
  
+ ![Ad Platform](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/10.2.png)
 
 3)Add ad platform
 Select the platform you want
-
+![Selected Platfrom](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/10.3.png)
 
 4)Configuration ad platform
+
+![Configure Platfrom](https://github.com/vinith-cit/images-for-ios-SDK/blob/master/10.4.png)
+
+
 
 --> **APP ID settings**
 publisher should sign up in relevant  ad platfroms to get the corresponding app information. Since the interfaces of different platforms are different , usually you just need to enter App ID, sometimes may need to enter other information. 
@@ -823,11 +860,17 @@ Only when the switch is on will the campaign make sense. Capacity is the request
 -->**Region optimization**
 Region optimization fuction refers to the phones at home show the domestic configurated ads, while phones at abroad show the foreing configurated ads, meeting the different demands to the largest extent. When region optimizaiton is off, it will not tell apart at home or at abroad.
 
+![Region](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/10.5.png)
+
+
 ##XI.Configurate files offline
+
+![configure](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/11.1.png)
 
 1) download offline configurated files
 
 2) put themt into project catagorie
+![Project](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/11.2.png)
 
 
 
@@ -852,11 +895,15 @@ We suggest only delete the project quote when deleting interstitials from the pr
 Sometimes publisher may want to add an ad platfrom which is not contains in the integration. Adview can realize this demands.
 There is “ customize ad platform” in “add ad platform”
 
+![Customize Platform](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/13.1.png)
+
 Publisher should register in relevant platforms first to get the corresponding app information. Since the interfaces of different ad platforms are different, usually you just need to enter app ID, some may need to enter other information. If not, you can randomly enter any characters.
 
 **Codes for reference**
 
 1.Add the  SDK of which platform you would like to  add  to AdNetwork of Xcode.
+
+![AdNetwork](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/13.2.png)
 
 2.Create  the category of AdInstlAdNetworkAdapter and complete its Delegate
 

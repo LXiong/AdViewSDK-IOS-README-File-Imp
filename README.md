@@ -486,7 +486,7 @@ self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegat
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-           self.videoManger = [AdVideoManager managerWithAdVideoKey:NATIVEKEY WithDelegate:self]; 
+     self.videoManger = [AdVideoManager managerWithAdVideoKey:NATIVEKEY WithDelegate:self]; 
 }
 
 ```
@@ -531,6 +531,7 @@ self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegat
 ##IX.Configurate Xcode project
 
 1.set the value of Other Linker Flags in the project , and tag “-ObjC”
+
 2.add AdViewSDK  and the framework needed  in your project.	
 
     --> libsqlite3.tbd
@@ -788,11 +789,16 @@ systemconfiguration.framework
 CoreMotion.framework         libz.tbd
 libsqlite3.tbd
 
-3.When adding SDK, some documents are repeatedly used, you need to delect the repeatedly used documents or do not compile them.The repeated documents includes: OpenUDID.m 、ZipArchive.m 、zip.m 、unzip.m 、mztools.c  ioapi.c  and Reachbility.m。
+
+3.When adding SDK, some documents are repeatedly used, you need to delect the repeatedly used documents or do not compile them.The repeated documents includes: OpenUDID.m 、ZipArchive.m 、zip.m 、unzip.m 、mztools.c  ioapi.c  and Reachbility.m
+
 4.Configurate your ads’ interstitial priorities and propotions in AdView’s website.
+
 5.Compile and connect your project and the interstitial can be shown.
 
+
 ##X. AdView background app settings
+
 1)app settings
 
 

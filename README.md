@@ -1572,19 +1572,23 @@ s
 
 
 
-XII.Delete the unnecessary ad platforms
+##XII.Delete the unnecessary ad platforms
+
 It’s quite easy to delete the unnecessary interstitials. You just have to delete  the relevant interstitial files under AdInstlSDK/AdNetworks  in the project and re-compile. 
 We suggest only delete the project quote when deleting interstitials from the project, instead of deleting the interstitials from the hardware. Remain the interstitial development library in case for need.
-XIII.Add customized ad platform (interstitial)
+
+##XIII.Add customized ad platform (interstitial)
 Sometimes publisher may want to add an ad platfrom which is not contains in the integration. Adview can realize this demands.
 There is “ customize ad platform” in “add ad platform”
 
 Publisher should register in relevant platforms first to get the corresponding app information. Since the interfaces of different ad platforms are different, usually you just need to enter app ID, some may need to enter other information. If not, you can randomly enter any characters.
 
 Codes for reference
-1.	Add the  SDK of which platform you would like to  add  to AdNetwork of Xcode.
+1.Add the  SDK of which platform you would like to  add  to AdNetwork of Xcode.
 
-2.	Create  the category of AdInstlAdNetworkAdapter and complete its Delegate
+2.Create  the category of AdInstlAdNetworkAdapter and complete its Delegate
+
+```
 #import "AdInstlAdNetworkAdapter.h"
 #import <Walker/GuInitServer.h>
 #import <Walker/PobAppFrame.h>
@@ -1594,7 +1598,12 @@ Codes for reference
 @property (nonatomic, strong) GuInitServer * gunInitServer;
 @property (nonatomic, strong) PobAppFrame  * pobAppFrame;
 @end
-two ways to complete: one is networkType（to get channel ID, for customized ad usuallly return AdInstlAdNetworkTypeUserDefined）. Another one is Load
+
+```
+
+//two ways to complete: one is networkType（to get channel ID, for customized ad usuallly return AdInstlAdNetworkTypeUserDefined）. Another one is Load
+
+```
 + (AdInstlAdNetworkType)networkType
 {
     return AdInstlAdNetworkTypeXingYun;
@@ -1609,6 +1618,8 @@ two ways to complete: one is networkType（to get channel ID, for customized ad 
         [[AdViewAdNetworkRegistry sharedInstlRegistry] registerClass:self];
     }
 }
+
+```
 在加载广告(loadAdInstl)方法中去实例化广告和发送广告请求
 - (BOOL)loadAdInstl:(UIViewController *)controller
 {
@@ -1625,12 +1636,15 @@ two ways to complete: one is networkType（to get channel ID, for customized ad 
     [self.gunInitServer setInfo:appID Channel:@"" User_info:@""];
     //请求广告
     self.pobAppFrame = [[XingYunInstlClass alloc] orientation:@"Portrait" andDelegate:self];
+    
     //向AdView服务器发送请求汇报，方便开发者查看
     [self.adInstlManager adapter:self requestString:@"req"];
     return YES;
 }
 
 5.	Complete ad impressions:
+
+```
 - (BOOL)showAdInstl:(UIViewController *)controller
 {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_5_0
@@ -1648,14 +1662,19 @@ two ways to complete: one is networkType（to get channel ID, for customized ad 
 #endif
     if (self.pobAppFrame)
     {
-        //广告展示
+        //Ad display
         [self.pobAppFrame showpobFrame:self.rootController];
         return YES;
     }
     return NO;
 }
 
+```
+
 6.	Complete SDK of the inserted ad, add status and report data .
+
+
+```
  //interstitial pops up successfully 
 - (void)showPobFrameSucess
 {
@@ -1663,12 +1682,14 @@ two ways to complete: one is networkType（to get channel ID, for customized ad 
         [self.adInstlManager adapter:self 
          requestString:@"show"];
 }
+
 //interstitial failed to  pop up 
 - (void)showPobFrameFail
 {
 [self.adInstlManager adapter:self didGetEvent:InstlEventType_FailLoadAd error:nil];
 [self.adInstlManager adapter:self requestString:@"fail"];
 }
+
 // close interstitial 
 - (void)closePobAppFrame
 {
@@ -1683,12 +1704,14 @@ two ways to complete: one is networkType（to get channel ID, for customized ad 
 }
 	[adInstlManager adapter:self didGetEvent:InstlEventType_DidDismissAd error:nil];
 }
+
 // successfully acquired data
 - (void)initPobFrameSuccess
 {
 	[self.adInstlManager adapter:self didGetEvent:InstlEventType_DidLoadAd error:nil];
     [self.adInstlManager adapter:self requestString:@"suc"];
 }
+
 // failed to acquired data
 - (void)initPobFrameFail
 {
@@ -1696,7 +1719,12 @@ two ways to complete: one is networkType（to get channel ID, for customized ad 
 [self.adInstlManager adapter:self requestString:@"fail"];
 }
 
-7.	to clear up data in stopBeingDelegate
+```
+
+7.to clear up data in stopBeingDelegate
+
+```
+
 - (void)stopBeingDelegate
 {
     AWLogInfo(@"xingyun stop being delegate");
@@ -1711,9 +1739,11 @@ two ways to complete: one is networkType（to get channel ID, for customized ad 
     }
 }
 
-
+```
+
  
-XIV. FAQ
+##XIV. FAQ
+
 Q：why AdInstl  cannot show ads?
 A：The most likely reason is that you havenot added additional link  options which enable your interstitial development library to load into your application. You can refer to the 5th step of “insert AdView integration in the interface of the  project”.
 

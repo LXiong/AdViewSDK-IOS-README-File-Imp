@@ -59,20 +59,13 @@
 
 Integrated iOS SDK includes the following contents:
 
-	|   File or category name                   | Intruductions                               |
-        | -------------                             | ------------------------------------------- |
-        |       AdView                              |  AdView  integrated SDK development kit     |
-        |      AdNetworks                           | Interstitial ad development kit supported   |
-	|                                           |                       by integrated SDK     |
+	   File or category name                                               Intruductions
+               AdView                                             AdView  integrated SDK development kit
+            AdNetworks                                  Interstitial ad development kit supported by integrated SDK 
+              Libs                                           Sourse library needed by integrated kit
+              Doc                                    Integrated SDK resources includes: update log, user brochure, current                                                             version, precautions and other documents. 
+        AdViewToolLevel                                         Auxiliary integration tool  for banner 
 
-
-        |             File or category name             |                 Intruductions                          |
-        | --------------------------------------------- | ------------------------------------------------------ |                   |                 AdView                        |          AdView  integrated SDK development kit        |                   |               AdNetworks                      |        Interstitial ad development kit supported       |
-	|                                               |                       by integrated SDK                |
-        |                  Libs                         |         Sourse library needed by integrated kit        |
-        |                  Doc                          |          Integrated SDK resources includes:            |
-	|                                               |           update log, user brochure, current           |                   |                                               |          version, precautions and other documents.     |
-        |           AdViewToolLevel                     |           Auxiliary integration tool  for banner       |                         
       
 
   **Instructions:**

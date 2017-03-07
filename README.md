@@ -2,8 +2,8 @@
 
 
 ##Contents
-[I.Register and get SDK]
-[II.Add  SDK]	
+[I.Register and get SDK](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#i----register-and-get-sdk)
+[II.Add  SDK](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#ii---add--sdk)	
 [III.Create banner ads]	
 [IV.Create interstitial ads]	
 [V.Create open screen ads]	
@@ -20,7 +20,7 @@
 
 
 
-##I.	Register and get SDK
+##I.Register and get SDK
 
 1.Visit AdView’s website http://www.adview.com to register an account.
 2.Login and select “Publise app” in “My Product” 
@@ -70,7 +70,7 @@ Integrated iOS SDK includes the following contents:
     Position of video ad slot ID: App Management— edit – video ad slot module
     
     
-##II.	Add  SDK
+##II.Add  SDK
 
   It’s easy to integrate the integrated SDK in a project, usually you can integrate AdInstl into your project by the following steps:
   1）Get AdViewSDK development kit from the website and unzip it in Finder. You will see the unzipped AdViewSDK in Finder just like the image shows:
@@ -103,7 +103,7 @@ Integrated iOS SDK includes the following contents:
       
    ```   
 
-  ##III.	Create banner ads
+##III.Create banner ads
 
   1）Complete  Delegate of AdView in the interface where need to insert banner, just like the below codes show: 
 
@@ -152,7 +152,7 @@ Integrated iOS SDK includes the following contents:
   
   ```
 
-  ##IV.  Create interstitial ads
+##IV.Create interstitial ads
   
   1）Complete Delegate of interstitial in where need to insert interstitial ads. If you use interstitial in different interface, you can complete only once in AppDelegate object, and provide an external way to call the location.
   
@@ -230,7 +230,7 @@ Integrated iOS SDK includes the following contents:
   }
   ```
 
-  V. Create open screen ads
+##V. Create open screen ads
   
   1）Insert  open screen object in AppDelegate and the generate the  open screen object, as the below codes: 
   
@@ -408,7 +408,7 @@ self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegat
 
 ```
 
-VII.Create video ads
+##VII.Create video ads
 
 1)Complete Delegate of  the video in where need to insert video. If you use video in different interface, you can complete only one time in AppDelegate object, and provide external method to call positions.
 
@@ -491,7 +491,7 @@ VII.Create video ads
 
 ```
 
-VIII.Create direct advertising, exchanging advertising and  their campaigns
+##VIII.Create direct advertising, exchanging advertising and  their campaigns
 
 1.Login Adview’s official website and enter publishers end,  Ads management → creative database：
 2.Click ”Create creatives” button and enter the information needed. When create H5 ads, you must add the <a href=””></a> tag in HTML codes, otherwise no clicks will be triggered after the ads are shown. Take direct ad for example:

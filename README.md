@@ -892,9 +892,8 @@ Publisher should register in relevant platforms first to get the corresponding a
     }
 }
 
-```
 
-在加载广告(loadAdInstl)方法中去实例化广告和发送广告请求
+In the load ad (loadAdInstl) method to instantiate the ad and send the ad request
 - (BOOL)loadAdInstl:(UIViewController *)controller
 {
     Class XingYunInstlClass = NSClassFromString(@"PobAppFrame");
@@ -902,20 +901,29 @@ Publisher should register in relevant platforms first to get the corresponding a
     if(nil == XingYunInstlClass) return NO;
     if (nil == XingYunInstlServer) return NO;
     if (controller == nil) return NO;
+    
     self.rootController = controller;
-    //从后台接受AppID
+    
+    // Accept AppID from the background
     NSString *appID = self.networkConfig.pubId;
-    //实例化
+    
+    // instantiate
     self.gunInitServer = [[XingYunInstlServer alloc] init];
     [self.gunInitServer setInfo:appID Channel:@"" User_info:@""];
-    //请求广告
+    
+    // request ads
     self.pobAppFrame = [[XingYunInstlClass alloc] orientation:@"Portrait" andDelegate:self];
-    //向AdView服务器发送请求汇报，方便开发者查看
+    
+    //Send a request report to the AdView server, data will collect in Dashboard
     [self.adInstlManager adapter:self requestString:@"req"];
     return YES;
 }
 
+```
+
 5.	Complete ad impressions:
+
+```
 - (BOOL)showAdInstl:(UIViewController *)controller
 {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_5_0
@@ -933,14 +941,17 @@ Publisher should register in relevant platforms first to get the corresponding a
 #endif
     if (self.pobAppFrame)
     {
-        //广告展示
+        //Ad display
         [self.pobAppFrame showpobFrame:self.rootController];
         return YES;
     }
     return NO;
 }
+```
 
 6.	Complete SDK of the inserted ad, add status and report data .
+
+```
  //interstitial pops up successfully 
 - (void)showPobFrameSucess
 {
@@ -948,12 +959,14 @@ Publisher should register in relevant platforms first to get the corresponding a
         [self.adInstlManager adapter:self 
          requestString:@"show"];
 }
+
 //interstitial failed to  pop up 
 - (void)showPobFrameFail
 {
 [self.adInstlManager adapter:self didGetEvent:InstlEventType_FailLoadAd error:nil];
 [self.adInstlManager adapter:self requestString:@"fail"];
 }
+
 // close interstitial 
 - (void)closePobAppFrame
 {
@@ -968,12 +981,14 @@ Publisher should register in relevant platforms first to get the corresponding a
 }
 	[adInstlManager adapter:self didGetEvent:InstlEventType_DidDismissAd error:nil];
 }
+
 // successfully acquired data
 - (void)initPobFrameSuccess
 {
 	[self.adInstlManager adapter:self didGetEvent:InstlEventType_DidLoadAd error:nil];
     [self.adInstlManager adapter:self requestString:@"suc"];
 }
+
 // failed to acquired data
 - (void)initPobFrameFail
 {
@@ -981,7 +996,11 @@ Publisher should register in relevant platforms first to get the corresponding a
 [self.adInstlManager adapter:self requestString:@"fail"];
 }
 
-7.	to clear up data in stopBeingDelegate
+```
+
+7.to clear up data in stopBeingDelegate
+
+```
 - (void)stopBeingDelegate
 {
     AWLogInfo(@"xingyun stop being delegate");
@@ -996,9 +1015,12 @@ Publisher should register in relevant platforms first to get the corresponding a
     }
 }
 
-
+```
+
+
  
-XIV. FAQ
+##XIV. FAQ
+
 Q：why AdInstl  cannot show ads?
 A：The most likely reason is that you havenot added additional link  options which enable your interstitial development library to load into your application. You can refer to the 5th step of “insert AdView integration in the interface of the  project”.
 

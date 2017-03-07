@@ -172,7 +172,8 @@ Integrated iOS SDK includes the following contents:
   
   1）Complete Delegate of interstitial in where need to insert interstitial ads. If you use interstitial in different interface, you can complete only once in AppDelegate object, and provide an external way to call the location.
   
-  ```
+
+```
     #import <UIKit/UIKit.h>
     #import "AdInstlManager.h"
     #import "AdInstlManagerDelegate.h"
@@ -181,8 +182,7 @@ Integrated iOS SDK includes the following contents:
         @property (nonatomic, strong) AdInstlManager * adInstlManager;
     @end
     
-    ```
-
+```
 
 
  2）Complete interstitial Delegate，as the below codes show:

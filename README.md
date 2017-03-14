@@ -1077,7 +1077,11 @@ A：The most likely reason is that you havenot added additional link  options wh
 Q：Why the project is successfully compiled but some errors occur when connecting? 
 A：Due to the characteristics of the Objective-C language, all the static libraries that participate in the connection are not allow to have repeated functions or variables or other symbols. It’s easy to be dealt with if the conflict happens in the interstitials. You just need to pay attention to  in which interstitial ads the conflicts occur.
 
-| Command | Description |
+|  File or category name  | Intruductions |
 | --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| AdView |   AdView  integrated SDK development kit |
+| AdNetworks |  Interstitial ad development kit supported by integrated SDK  |
+| Libs |   Sourse library needed by integrated kit |
+| Doc |  Integrated SDK resources includes: update log, user brochure, current version, precautions and other documents.  |
+| AdViewToolLevel |   Auxiliary integration tool  for banner |
+

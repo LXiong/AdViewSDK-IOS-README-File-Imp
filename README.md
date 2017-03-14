@@ -1086,7 +1086,18 @@ A：Due to the characteristics of the Objective-C language, all the static libra
 | AdView |   AdSupport.framework(optional) CoreLocation.framework|
          |AddressBook.framework      libc++.tbd(optional) |
          |	libsqlite3.tbd               libxml2.tbd |
-| AdNetworks |  Interstitial ad development kit supported by integrated SDK  |
+| AdChina（易传媒）| AudioToolbox.framework      AVFoundation.framework |
+                 | CoreGraphics.framework      CoreLocation.framework |
+		 | CoreMotion.framework        CoreTelephony.framework |
+		 | EventKit.framework           EventKitUI.framework |
+		 |  	Foundation.framework        libz.tbd |
+		 | MapKit.framework            MediaPlayer.framework |
+		 |  MessageUI.framework        QuartzCore.framework |
+		 
+		 
+		 
+		   
+
 | Libs |   Sourse library needed by integrated kit |
 | Doc |  Integrated SDK resources includes: update log, user brochure, current version, precautions and other documents.  |
 | AdViewToolLevel |   Auxiliary integration tool  for banner |

@@ -1077,8 +1077,7 @@ A：The most likely reason is that you havenot added additional link  options wh
 Q：Why the project is successfully compiled but some errors occur when connecting? 
 A：Due to the characteristics of the Objective-C language, all the static libraries that participate in the connection are not allow to have repeated functions or variables or other symbols. It’s easy to be dealt with if the conflict happens in the interstitials. You just need to pay attention to  in which interstitial ads the conflicts occur.
 
-
-
-
-
-
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |

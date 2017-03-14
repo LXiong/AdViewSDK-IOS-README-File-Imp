@@ -639,186 +639,163 @@ self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegat
 
 the below contents are the framework needed by various ad platforms ( framework of Adview must add)
 
-Ad platform
-Famework
-AdView
-AdSupport.framework(optional) CoreLocation.framework
-AddressBook.framework      libc++.tbd(optional) 
-libsqlite3.tbd               libxml2.tbd
-AdChina（易传媒）
-AudioToolbox.framework      AVFoundation.framework
-CoreGraphics.framework      CoreLocation.framework
-CoreMotion.framework        CoreTelephony.framework
-EventKit.framework           EventKitUI.framework
-Foundation.framework        libz.tbd
-MapKit.framework            MediaPlayer.framework
-MessageUI.framework        QuartzCore.framework
-SystemConfiguration.framework 
-StoreKit.framework           UIKit.framework
-libiconv.2.4.0.tbd            libsqlite3.0.tbd
-libc++.tbd(optional)
-Adwo（安沃）
-AdSupport.framework(optional)AudioToolbox.framework
-AVFoundation.frameworkore   Audio.framework
-CoreLocation(optional)        CoreMedia.framework
-CoreMotion.framework        CoreTelephony.framework
-EventKit.framework
-           MapKit.framework
-
-MessageUI.framework
-  PassKit.framework(optional)
- QuartzCore.framework        StoreKit.framework(optional)
-SystemConfiguration.framework
-
-Social.framework(optional)
-
-libz.1.2.5.tbd or libz.1.1.3.tbd
-
-Baidu（百度）
-QuartzCore.framework        Security.framework
-AdSupper.farmework(optional) StoreKit.framework(optional)
-libz.tbd                    AudioToolbox.framework  
-CoreMotion.framework        MediaPlayer.framework
-CoreLocation.framework      libc++.daylib(optional)
-CoreTelephony.framework     UIKit.framework
-SystemConfigfuration.framework
-Foundation.framework         CoreGraphics.framewor
-WebKit.framework
-Chance（畅思）
-libz.tbd                     Security.framework
-SystemConfigguration.framework 
-StoreKit.framework(optional)    AdSupport.framework
-CoreTelephony.framework
-DianRu（点入）
-libz.1.tbd                    QuartzCore.framework
-UIKit.framework               CoreLocation.framework
-MapKit.framework             SystemConfigfuration.framework
-Foundation.framewrok          CoreGraphics.framework
-AdSupport.framework(optional)
-Domob（多盟）
-libz.tbd                      libsqlite3.tbd
-CoreMedia.framework          QuartzCore.framework
-CoreText.framework           StoreKit.framework(optional)
-PassKit.framework(optional)    Social.framework
-EventKit.framework            AVFoundation.framework
-AudioToolbox.framework       UIKit.framework
-Systemconfiguration.framework
-Foundation.framework  
-GTDMob（广点通）
-AdSupport.framework          CoreLocation.framework
-QuarzCore.framework          libz.tbd
-SystemConfiguration.framework
-CoreTelephony.framework      StoreKit.framework(optional)
-Security.framework  
-GuoHe（智游汇）
-SystemConfiguration.framework
-StoreKit.framework(optional)    AdSupport.framework
-Guomen（果盟）
-QuartzCore.framework         CoreTelephony.framework
-SystemConfiguration.framwork
-UIKit.framework               Foundation.framework
-CoreGraphics.framework       ImageIO.framework
-StoreKit.framework(optional)    AdSupport.framework(optional)
-IAD
-IAD.framework
-InMobi
-CoreLocation.framework        EventKit.framework
-EventKitUI.framework          Social.framework
-libz.tbd                      AdSupport.framework
-AudioToolbox.framework       AVFoundation.framework
-CoreGraphics.framework       CoreTelephony.framework
-Foundation.framework          MediaPlayer.framework
-MessageUI.framework          MobileCoreServices.framework
-PassKit.framework(optional)             QuartzCore.framework
-Security.framework             StoreKit.framework(optional)
-SystemConfiguration.framework  
-UIKit.framework
-Lmmob（力美）
-AudioToolbox.framework        CFNetwork.framework
-CoreLocation.framework        CoreTelephony.framework
-EventKit.framework             EventKitUI.framework
-MapKit.framework              MediaPlayer.framework
-MessageUI.framework          MobileCoreServices.framework
-QuartzCore.framework          Security.framework
-AdSupport.framework(optional)
-SystemConfiguration.framework
-libz.1.2.5.tbd
-Miidi（米迪）
-CoreGraphics.framework
-QuartzCore.framework
-MessageUI.framework
-SystemConfiguration.framework
-AdSupport.framework(optional)
-MobiSage（艾德思齐）
-Foundation.framework          AdSupport.framework(optional)
-StoreKit.framework(optional)    CoreMotion.framework
-MobileCoreServices.framework  QuartzCore.framework  CoreAudio.framework          CoreImage.frramework
-AudioToolbox.framework       AVFoundation.framework
-ImageIO.framework             CoreMedia.framework
-QuartzCore.framework          Security.framework
-CFNetwork.framework          UIKit.framework
-CoreGraphics.framework        QuartzCore.framework
-SystemConfiguration.framework 
-CoreLocation.framework        Libz.tbd
-CoreTelephony.framework
-MessageUI.framework  
-SmartMad
-CFNetwork.framewor           MessageUI.framework
-SystemConfiguration.framework
-EventKiyUI.framgwork          EventKit.framework
-MediaPlayer.framework         QuartzCore.framework
-libz.tbd                      AVFoundation.framework
-CoreTelephonty.framework      AdSupport.framework(optional)
-AudioToolbox.framework        CoreLocaation.framework
-CoreMotion.framework          UIKit.framework
-Foundation.framework          CoreGraphics.framework
-Tanx（阿里妈妈）
-UIKit.framework                CoreGraphics.framework
-QuartzCore.framework          Foundation.framework
-CoreLocation.framework         libz.tbd
-SystemConfiguration.framework
-StoreKit.framework(optional)     MapKit.framework
-MessageUI.framework
-CoreTelephony.framework  
-Waps（万普）
-AdSupport.framework(optional)   QuartzCore.framework
-Security.framework             CoreTelephony.framework
-SystemConfiguratioin.framework
-Libz.tbd
-WQMobile（帷千）
-libsqlite3.tbd                 StoreKit.frameowrk
-UIKit.framework               QuartzCore.framework
-SystemConfiguration.framework    MobileCoreServices.framework
-MessageUI.framework         MediaPlayer.framework
-MapKit.framework             libz.tbd
-Foundation.framwork          EventKit.framework
-EventKitUI.framework          CoreMotion.framework
-CoreLocation.framework       CoreGraphics.framework
-CoreFoundation.framework     FNetwork.framework
-AdSupport.framework(optional)
-CoreTelephony.framework
-XingYun（行云）
-CoreLocation.framework       MapKit.framework
-Security.framework            CFNetwork.framework
-MobileCoreServices.framework
-CoreTelephony.framework    AdSupport.framework(optional)
-SystemConfiguration.framework
-ImageIO.framework           QuartzCore.framework
-UIKit.famework               Foundation.framework
-CoreGraphics
-YiJiFen（易积分）
-ImageIO.framework           QuartzCore.framework
-SystemConfiguration.framework
-StoreKit.framework(optional)       CoreTelephony.framework
-AdSupport.framework(optional)       CoreGraphics.framework
-Eadver.framework             Poundation.framework
-UIkit.framework  
-YouMi（有米）
-storekit.framework(optional)     security.framework
-cfnetwork.framework           ImageIO.framework
-systemconfiguration.framework
-CoreMotion.framework         libz.tbd
-libsqlite3.tbd
+|  	Ad platform     |     Framework                                                                        |
+| --- | --- |
+| AdView |   AdSupport.framework(optional) CoreLocation.framework|
+         |AddressBook.framework      libc++.tbd(optional) |
+         |	libsqlite3.tbd               libxml2.tbd |
+| AdChina（易传媒）| AudioToolbox.framework      AVFoundation.framework |
+                 | CoreGraphics.framework      CoreLocation.framework |
+		 | CoreMotion.framework        CoreTelephony.framework |
+		 | EventKit.framework           EventKitUI.framework |
+		 |  	Foundation.framework        libz.tbd |
+		 | MapKit.framework            MediaPlayer.framework |
+		 |  MessageUI.framework        QuartzCore.framework |
+		 |  SystemConfiguration.framework  |
+		 |  	StoreKit.framework           UIKit.framework |
+		  |  libiconv.2.4.0.tbd            libsqlite3.0.tbd |
+		 | libc++.tbd(optional)  |
+| InMobi  | CoreLocation.framework        EventKit.framework |
+                 | EventKitUI.framework          Social.framework |
+		 | libz.tbd                      AdSupport.framework |
+		 | AudioToolbox.framework       AVFoundation.framework |
+		 |  CoreGraphics.framework       CoreTelephony.framework |
+		 | 	Foundation.framework          MediaPlayer.framework |
+		 |  MessageUI.framework |
+		 |   	PassKit.framework(optional)             QuartzCore.framework  |
+		 |  	Security.framework             StoreKit.framework(optional) |
+		 | 	SystemConfiguration.framework |
+		 |  UIKit.framework |
+|  Adwo（安沃）| AdSupport.framework(optional)AudioToolbox.framework |
+                 | AVFoundation.frameworkore   Audio.framework |
+		 | CoreLocation(optional)        CoreMedia.framework |
+		 | CoreMotion.framework        CoreTelephony.framework |
+		 |  EventKit.framework MapKit.framework |
+		 | 	MessageUI.framework |
+		 |  PassKit.framework(optional) |
+		 |   QuartzCore.framework        StoreKit.framework(optional)  |
+		 |  	SystemConfiguration.framework |
+		 | 	Social.framework(optional) |
+		 | 	libz.1.2.5.tbd or libz.1.1.3.tbd  |	
+|  Baidu（百度）  | QuartzCore.framework        Security.framework |
+                 | AVFoundation.frameworkore   Audio.framework |
+		 | CoreLocation(optional)        CoreMedia.framework |
+		 | CoreMotion.framework        CoreTelephony.framework |
+		 |  EventKit.framework MapKit.framework |
+		 | 	MessageUI.framework |
+		 |  PassKit.framework(optional) |
+		 |   QuartzCore.framework        StoreKit.framework(optional)  |
+		 |  	SystemConfiguration.framework |
+		 | 	Foundation.framework         CoreGraphics.framework |
+		 | 	WebKit.framework  |	
+| Chance（畅思）  | 	libz.tbd                     Security.framework |
+                 | 	SystemConfiguration.framework |
+		 | 	CoreTelephony.framework |
+| DianRu（点入)  | 	libz.1.tbd                    QuartzCore.framework |
+                 | 	UIKit.framework               CoreLocation.framework |
+		 | MapKit.framework             SystemConfigfuration.framework |
+		 | 	Foundation.framewrok          CoreGraphics.framework |
+		 |  	AdSupport.framework(optional) |
+| Domob（多盟）   | 	libz.tbd                      libsqlite3.tbd |
+                 | 	CoreMedia.framework          QuartzCore.framework |
+		 | CoreText.framework           StoreKit.framework(optional) |
+		 | 	PassKit.framework(optional)    Social.framework |
+		 |  	EventKit.framework            AVFoundation.framework |
+		 | 	AudioToolbox.framework       UIKit.framework |
+		 |  	Systemconfiguration.framework |
+		 |   	Foundation.framework  |
+| GTDMob（广点通）  | 	AdSupport.framework          CoreLocation.framework |
+                 | QuarzCore.framework          libz.tbd |
+		 | SystemConfiguration.framework |
+		 | CoreTelephony.framework      StoreKit.framework(optional) |
+		 | Security.framework |
+| GuoHe（智游汇）  | SystemConfiguration.framework |
+                 | StoreKit.framework(optional)    AdSupport.framework |
+| Guomen（果盟）  | QuartzCore.framework         CoreTelephony.framework |
+                 | SystemConfiguration.framwork |
+		 | UIKit.framework               Foundation.framework |
+		 | CoreGraphics.framework       ImageIO.framework |
+		 |  StoreKit.framework(optional) |
+		 | 	AdSupport.framework(optional) |
+|  IAD  | IAD.framework |
+| Lmmob（力美）  | AudioToolbox.framework        CFNetwork.framework |
+                 | CoreLocation.framework        CoreTelephony.framework |
+		 | EventKit.framework             EventKitUI.framework |
+		 | MapKit.framework              MediaPlayer.framework |
+		 |  MessageUI.framework |
+		 | 	MobileCoreServices.framework |
+		 |  QuartzCore.framework          Security.framework |
+		 |   	AdSupport.framework(optional)  |
+		 |  	SystemConfiguration.framework |
+		 | 	libz.1.2.5.tbd |  
+| Miidi（米迪）  | CoreGraphics.framework |
+                 | QuartzCore.framework |
+		 | MessageUI.framework |
+		 | SystemConfiguration.framework |
+		 |  AdSupport.framework(optional) |
+| MobiSage（艾德思齐）  | Foundation.framework |
+                 | AdSupport.framework(optional) |
+		 | StoreKit.framework(optional)    CoreMotion.framework|
+		 | MobileCoreServices.framework  QuartzCore.framework |
+		 |  CoreAudio.framework          CoreImage.frramework |
+		 | AudioToolbox.framework       AVFoundation.framework |
+		 | ImageIO.framework             CoreMedia.framework |
+		 |   	QuartzCore.framework          Security.framework  |
+		 |  	CoreGraphics.framework        QuartzCore.framework |
+		 | 	CoreLocation.framework        Libz.tbd |
+		 |  CoreTelephony.framework |
+		  | MessageUI.framework |
+| SmartMad  | CFNetwork.framewor           MessageUI.framework |
+            |SystemConfiguration.framework|
+            |EventKiyUI.framgwork          EventKit.framework|
+            |MediaPlayer.framework         QuartzCore.framework|
+            |libz.tbd                      AVFoundation.framework|
+            |CoreTelephonty.framework      AdSupport.framework(optional)|
+            |AudioToolbox.framework        CoreLocaation.framework|
+            |CoreMotion.framework          UIKit.framework|
+            |Foundation.framework          CoreGraphics.framework|
+| Tanx（阿里妈妈）  |UIKit.framework                CoreGraphics.framework|
+                        |QuartzCore.framework          Foundation.framework|
+                        |CoreLocation.framework         libz.tbd|
+                        |SystemConfiguration.framework|
+                        |StoreKit.framework(optional)     MapKit.framework|
+                        |MessageUI.framework|
+                        |CoreTelephony.framework|
+|Waps（万普）| AdSupport.framework(optional)   QuartzCore.framework|
+            |Security.framework             CoreTelephony.framework|
+            |SystemConfiguratioin.framework|
+            |Libz.tbd|
+|WQMobile（帷千）|libsqlite3.tbd                 StoreKit.frameowrk|
+                |UIKit.framework               QuartzCore.framework|
+                |SystemConfiguration.framework|
+		|MobileCoreServices.framework|
+                |MessageUI.framework MediaPlayer.framework|
+                |MapKit.framework             libz.tbd|
+                |Foundation.framwork          EventKit.framework|
+                |EventKitUI.framework          CoreMotion.framework|
+                |CoreLocation.framework       CoreGraphics.framework|
+                |CoreFoundation.framework     FNetwork.framework|
+                |AdSupport.framework(optional)|
+                |CoreTelephony.framework|
+|XingYun（行云）|CoreLocation.framework       MapKit.framework|
+               |Security.framework            CFNetwork.framework|
+               |MobileCoreServices.framework|
+               |CoreTelephony.framework    AdSupport.framework(optional)|
+               |SystemConfiguration.framework|
+               |ImageIO.framework           QuartzCore.framework|
+               |UIKit.famework               Foundation.framework|
+               |CoreGraphics|
+|YiJiFen（易积分）|ImageIO.framework           QuartzCore.framework|
+                |SystemConfiguration.framework|
+                |StoreKit.framework(optional)       CoreTelephony.framework|
+                |AdSupport.framework(optional)       CoreGraphics.framework|
+                |Eadver.framework             Poundation.framework|
+                |UIkit.framework | 
+|YouMi（有米）|storekit.framework(optional)     security.framework|
+             | cfnetwork.framework           ImageIO.framework|
+             |systemconfiguration.framework|
+             |CoreMotion.framework         libz.tbd|
+             |libsqlite3.tbd|
 
 
 3.When adding SDK, some documents are repeatedly used, you need to delect the repeatedly used documents or do not compile them.The repeated documents includes: OpenUDID.m 、ZipArchive.m 、zip.m 、unzip.m 、mztools.c  ioapi.c  and Reachbility.m
@@ -1081,161 +1058,4 @@ A：The most likely reason is that you havenot added additional link  options wh
 Q：Why the project is successfully compiled but some errors occur when connecting? 
 A：Due to the characteristics of the Objective-C language, all the static libraries that participate in the connection are not allow to have repeated functions or variables or other symbols. It’s easy to be dealt with if the conflict happens in the interstitials. You just need to pay attention to  in which interstitial ads the conflicts occur.
 
-|  	Ad platform     |     Framework                                                                        |
-| --- | --- |
-| AdView |   AdSupport.framework(optional) CoreLocation.framework|
-         |AddressBook.framework      libc++.tbd(optional) |
-         |	libsqlite3.tbd               libxml2.tbd |
-| AdChina（易传媒）| AudioToolbox.framework      AVFoundation.framework |
-                 | CoreGraphics.framework      CoreLocation.framework |
-		 | CoreMotion.framework        CoreTelephony.framework |
-		 | EventKit.framework           EventKitUI.framework |
-		 |  	Foundation.framework        libz.tbd |
-		 | MapKit.framework            MediaPlayer.framework |
-		 |  MessageUI.framework        QuartzCore.framework |
-		 |  SystemConfiguration.framework  |
-		 |  	StoreKit.framework           UIKit.framework |
-		  |  libiconv.2.4.0.tbd            libsqlite3.0.tbd |
-		 | libc++.tbd(optional)  |
-| InMobi  | CoreLocation.framework        EventKit.framework |
-                 | EventKitUI.framework          Social.framework |
-		 | libz.tbd                      AdSupport.framework |
-		 | AudioToolbox.framework       AVFoundation.framework |
-		 |  CoreGraphics.framework       CoreTelephony.framework |
-		 | 	Foundation.framework          MediaPlayer.framework |
-		 |  MessageUI.framework |
-		 |   	PassKit.framework(optional)             QuartzCore.framework  |
-		 |  	Security.framework             StoreKit.framework(optional) |
-		 | 	SystemConfiguration.framework |
-		 |  UIKit.framework |
-|  Adwo（安沃）| AdSupport.framework(optional)AudioToolbox.framework |
-                 | AVFoundation.frameworkore   Audio.framework |
-		 | CoreLocation(optional)        CoreMedia.framework |
-		 | CoreMotion.framework        CoreTelephony.framework |
-		 |  EventKit.framework MapKit.framework |
-		 | 	MessageUI.framework |
-		 |  PassKit.framework(optional) |
-		 |   QuartzCore.framework        StoreKit.framework(optional)  |
-		 |  	SystemConfiguration.framework |
-		 | 	Social.framework(optional) |
-		 | 	libz.1.2.5.tbd or libz.1.1.3.tbd  |	
-|  Baidu（百度）  | QuartzCore.framework        Security.framework |
-                 | AVFoundation.frameworkore   Audio.framework |
-		 | CoreLocation(optional)        CoreMedia.framework |
-		 | CoreMotion.framework        CoreTelephony.framework |
-		 |  EventKit.framework MapKit.framework |
-		 | 	MessageUI.framework |
-		 |  PassKit.framework(optional) |
-		 |   QuartzCore.framework        StoreKit.framework(optional)  |
-		 |  	SystemConfiguration.framework |
-		 | 	Foundation.framework         CoreGraphics.framework |
-		 | 	WebKit.framework  |	
-| Chance（畅思）  | 	libz.tbd                     Security.framework |
-                 | 	SystemConfiguration.framework |
-		 | 	CoreTelephony.framework |
-| DianRu（点入)  | 	libz.1.tbd                    QuartzCore.framework |
-                 | 	UIKit.framework               CoreLocation.framework |
-		 | MapKit.framework             SystemConfigfuration.framework |
-		 | 	Foundation.framewrok          CoreGraphics.framework |
-		 |  	AdSupport.framework(optional) |
-| Domob（多盟）   | 	libz.tbd                      libsqlite3.tbd |
-                 | 	CoreMedia.framework          QuartzCore.framework |
-		 | CoreText.framework           StoreKit.framework(optional) |
-		 | 	PassKit.framework(optional)    Social.framework |
-		 |  	EventKit.framework            AVFoundation.framework |
-		 | 	AudioToolbox.framework       UIKit.framework |
-		 |  	Systemconfiguration.framework |
-		 |   	Foundation.framework  |
-| GTDMob（广点通）  | 	AdSupport.framework          CoreLocation.framework |
-                 | QuarzCore.framework          libz.tbd |
-		 | SystemConfiguration.framework |
-		 | CoreTelephony.framework      StoreKit.framework(optional) |
-		 | Security.framework |
-| GuoHe（智游汇）  | SystemConfiguration.framework |
-                 | StoreKit.framework(optional)    AdSupport.framework |
-| Guomen（果盟）  | QuartzCore.framework         CoreTelephony.framework |
-                 | SystemConfiguration.framwork |
-		 | UIKit.framework               Foundation.framework |
-		 | CoreGraphics.framework       ImageIO.framework |
-		 |  StoreKit.framework(optional) |
-		 | 	AdSupport.framework(optional) |
-|  IAD  | IAD.framework |
-| Lmmob（力美）  | AudioToolbox.framework        CFNetwork.framework |
-                 | CoreLocation.framework        CoreTelephony.framework |
-		 | EventKit.framework             EventKitUI.framework |
-		 | MapKit.framework              MediaPlayer.framework |
-		 |  MessageUI.framework |
-		 | 	MobileCoreServices.framework |
-		 |  QuartzCore.framework          Security.framework |
-		 |   	AdSupport.framework(optional)  |
-		 |  	SystemConfiguration.framework |
-		 | 	libz.1.2.5.tbd |  
-| Miidi（米迪）  | CoreGraphics.framework |
-                 | QuartzCore.framework |
-		 | MessageUI.framework |
-		 | SystemConfiguration.framework |
-		 |  AdSupport.framework(optional) |
-| MobiSage（艾德思齐）  | Foundation.framework |
-                 | AdSupport.framework(optional) |
-		 | StoreKit.framework(optional)    CoreMotion.framework|
-		 | MobileCoreServices.framework  QuartzCore.framework |
-		 |  CoreAudio.framework          CoreImage.frramework |
-		 | AudioToolbox.framework       AVFoundation.framework |
-		 | ImageIO.framework             CoreMedia.framework |
-		 |   	QuartzCore.framework          Security.framework  |
-		 |  	CoreGraphics.framework        QuartzCore.framework |
-		 | 	CoreLocation.framework        Libz.tbd |
-		 |  CoreTelephony.framework |
-		  | MessageUI.framework |
-| SmartMad  | CFNetwork.framewor           MessageUI.framework |
-            |SystemConfiguration.framework|
-            |EventKiyUI.framgwork          EventKit.framework|
-            |MediaPlayer.framework         QuartzCore.framework|
-            |libz.tbd                      AVFoundation.framework|
-            |CoreTelephonty.framework      AdSupport.framework(optional)|
-            |AudioToolbox.framework        CoreLocaation.framework|
-            |CoreMotion.framework          UIKit.framework|
-            |Foundation.framework          CoreGraphics.framework|
-| Tanx（阿里妈妈）  |UIKit.framework                CoreGraphics.framework|
-                        |QuartzCore.framework          Foundation.framework|
-                        |CoreLocation.framework         libz.tbd|
-                        |SystemConfiguration.framework|
-                        |StoreKit.framework(optional)     MapKit.framework|
-                        |MessageUI.framework|
-                        |CoreTelephony.framework|
-|Waps（万普）| AdSupport.framework(optional)   QuartzCore.framework|
-            |Security.framework             CoreTelephony.framework|
-            |SystemConfiguratioin.framework|
-            |Libz.tbd|
-|WQMobile（帷千）|libsqlite3.tbd                 StoreKit.frameowrk|
-                |UIKit.framework               QuartzCore.framework|
-                |SystemConfiguration.framework|
-		|MobileCoreServices.framework|
-                |MessageUI.framework MediaPlayer.framework|
-                |MapKit.framework             libz.tbd|
-                |Foundation.framwork          EventKit.framework|
-                |EventKitUI.framework          CoreMotion.framework|
-                |CoreLocation.framework       CoreGraphics.framework|
-                |CoreFoundation.framework     FNetwork.framework|
-                |AdSupport.framework(optional)|
-                |CoreTelephony.framework|
-|XingYun（行云）|CoreLocation.framework       MapKit.framework|
-               |Security.framework            CFNetwork.framework|
-               |MobileCoreServices.framework|
-               |CoreTelephony.framework    AdSupport.framework(optional)|
-               |SystemConfiguration.framework|
-               |ImageIO.framework           QuartzCore.framework|
-               |UIKit.famework               Foundation.framework|
-               |CoreGraphics|
-|YiJiFen（易积分）|ImageIO.framework           QuartzCore.framework|
-                |SystemConfiguration.framework|
-                |StoreKit.framework(optional)       CoreTelephony.framework|
-                |AdSupport.framework(optional)       CoreGraphics.framework|
-                |Eadver.framework             Poundation.framework|
-                |UIkit.framework | 
-|YouMi（有米）|storekit.framework(optional)     security.framework|
-             | cfnetwork.framework           ImageIO.framework|
-             |systemconfiguration.framework|
-             |CoreMotion.framework         libz.tbd|
-             |libsqlite3.tbd|
 

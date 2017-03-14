@@ -1229,30 +1229,13 @@ A：Due to the characteristics of the Objective-C language, all the static libra
                |CoreGraphics|
 |YiJiFen（易积分）|ImageIO.framework           QuartzCore.framework|
                 |SystemConfiguration.framework|
-|StoreKit.framework(optional)       CoreTelephony.framework|
-|AdSupport.framework(optional)       CoreGraphics.framework|
-|Eadver.framework             Poundation.framework|
-|UIkit.framework | 
-
-
-
-	  
-
-			
-			
-
-            
-
-		 
-		 
-
-
-		 
-		 
-		 
-		   
-
-| Libs |   Sourse library needed by integrated kit |
-| Doc |  Integrated SDK resources includes: update log, user brochure, current version, precautions and other documents.  |
-| AdViewToolLevel |   Auxiliary integration tool  for banner |
+                |StoreKit.framework(optional)       CoreTelephony.framework|
+                |AdSupport.framework(optional)       CoreGraphics.framework|
+                |Eadver.framework             Poundation.framework|
+                |UIkit.framework | 
+|YouMi（有米）|storekit.framework(optional)     security.framework|
+             | cfnetwork.framework           ImageIO.framework|
+             |systemconfiguration.framework|
+             |CoreMotion.framework         libz.tbd|
+             |libsqlite3.tbd|
 

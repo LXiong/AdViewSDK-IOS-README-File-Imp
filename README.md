@@ -1081,9 +1081,11 @@ A：The most likely reason is that you havenot added additional link  options wh
 Q：Why the project is successfully compiled but some errors occur when connecting? 
 A：Due to the characteristics of the Objective-C language, all the static libraries that participate in the connection are not allow to have repeated functions or variables or other symbols. It’s easy to be dealt with if the conflict happens in the interstitials. You just need to pay attention to  in which interstitial ads the conflicts occur.
 
-|  File or category name  | Intruductions |
+|  	Ad platform   |     Framework   |
 | --- | --- |
-| AdView |   AdView  integrated SDK development kit |
+| AdView |   AdSupport.framework(optional) CoreLocation.framework
+AddressBook.framework      libc++.tbd(optional) 
+1.	libsqlite3.tbd               libxml2.tbd |
 | AdNetworks |  Interstitial ad development kit supported by integrated SDK  |
 | Libs |   Sourse library needed by integrated kit |
 | Doc |  Integrated SDK resources includes: update log, user brochure, current version, precautions and other documents.  |

@@ -1209,15 +1209,32 @@ A：Due to the characteristics of the Objective-C language, all the static libra
             |Libz.tbd|
 |WQMobile（帷千）|libsqlite3.tbd                 StoreKit.frameowrk|
                 |UIKit.framework               QuartzCore.framework|
-SystemConfiguration.framework    MobileCoreServices.framework
-MessageUI.framework         MediaPlayer.framework
-MapKit.framework             libz.tbd
-Foundation.framwork          EventKit.framework
-EventKitUI.framework          CoreMotion.framework
-CoreLocation.framework       CoreGraphics.framework
-CoreFoundation.framework     FNetwork.framework
-AdSupport.framework(optional)
-CoreTelephony.framework
+                |SystemConfiguration.framework|
+		|MobileCoreServices.framework|
+                |MessageUI.framework MediaPlayer.framework|
+                |MapKit.framework             libz.tbd|
+                |Foundation.framwork          EventKit.framework|
+                |EventKitUI.framework          CoreMotion.framework|
+                |CoreLocation.framework       CoreGraphics.framework|
+                |CoreFoundation.framework     FNetwork.framework|
+                |AdSupport.framework(optional)|
+                |CoreTelephony.framework|
+|XingYun（行云）|CoreLocation.framework       MapKit.framework|
+               |Security.framework            CFNetwork.framework|
+               |MobileCoreServices.framework|
+               |CoreTelephony.framework    AdSupport.framework(optional)|
+               |SystemConfiguration.framework|
+               |ImageIO.framework           QuartzCore.framework|
+               |UIKit.famework               Foundation.framework|
+               |CoreGraphics|
+|YiJiFen（易积分）|ImageIO.framework           QuartzCore.framework|
+                |SystemConfiguration.framework|
+|StoreKit.framework(optional)       CoreTelephony.framework|
+|AdSupport.framework(optional)       CoreGraphics.framework|
+|Eadver.framework             Poundation.framework|
+|UIkit.framework | 
+
+
 
 	  
 

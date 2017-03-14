@@ -899,18 +899,16 @@ Publisher should register in relevant platforms first to get the corresponding a
 ```
 
 
-```
-/**two ways to complete: one is networkType（to get channel ID, for customized ad usuallly return    *AdInstlAdNetworkTypeUserDefined）. Another one is Load
- */
+3.two ways to complete: one is networkType（to get channel ID, for customized ad usuallly return    *AdInstlAdNetworkTypeUserDefined）. Another one is Load
 
+
+```
 + (AdInstlAdNetworkType)networkType
 {
     return AdInstlAdNetworkTypeXingYun;
 }
 
-```
 
-```
 //@"PobAppFrame"  is the inserted ad name
 //sharedInstlRegistry   interstitial 
 //sharedBannerRegistry   banner
@@ -924,7 +922,11 @@ Publisher should register in relevant platforms first to get the corresponding a
 }
 
 
-In the load ad (loadAdInstl) method to instantiate the ad and send the ad request
+```
+
+4.In the load ad (loadAdInstl) method to instantiate the ad and send the ad request
+
+```
 - (BOOL)loadAdInstl:(UIViewController *)controller
 {
     Class XingYunInstlClass = NSClassFromString(@"PobAppFrame");

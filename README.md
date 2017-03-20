@@ -1,7 +1,8 @@
-###AdView IOS SDK Brochure  for  Developers
+### AdView IOS SDK Brochure  for  Developers
 
 
-##Contents
+## Contents
+
 [I.Register and get SDK](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#i----register-and-get-sdk)
 
 [II.Add  SDK](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#ii---add--sdk)	
@@ -33,7 +34,7 @@
 
 
 
-##I.Register and get SDK
+## I.Register and get SDK
 
 1.Visit AdView’s website http://www.adview.com to register an account.
 
@@ -99,7 +100,7 @@ Integrated iOS SDK includes the following contents:
     
     
     
-##II.Add  SDK
+## II.Add  SDK
 
   It’s easy to integrate the integrated SDK in a project, usually you can integrate AdInstl into your project by the following steps:
   
@@ -143,7 +144,7 @@ Integrated iOS SDK includes the following contents:
       
    ```   
 
-##III.Create banner ads
+## III.Create banner ads
 
   1）Complete  Delegate of AdView in the interface where need to insert banner, just like the below codes show: 
 
@@ -192,7 +193,7 @@ Integrated iOS SDK includes the following contents:
   
   ```
 
-##IV.Create interstitial ads
+## IV.Create interstitial ads
   
   1）Complete Delegate of interstitial in where need to insert interstitial ads. If you use interstitial in different interface, you can complete only once in AppDelegate object, and provide an external way to call the location.
   
@@ -277,7 +278,7 @@ Integrated iOS SDK includes the following contents:
   }
 ```
 
-##V. Create open screen ads
+## V. Create open screen ads
   
   1）Insert  open screen object in AppDelegate and the generate the  open screen object, as the below codes: 
   
@@ -372,7 +373,7 @@ Integrated iOS SDK includes the following contents:
  ```
   
 
-##VI. Create native ads
+## VI. Create native ads
 
 1）Complete Delegate of native ads in where need to insert native ads. If you use native ads in different interface, you can complete AppDelegate only one time, and provide external method to call positions.
 
@@ -454,7 +455,7 @@ self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegat
 
 ```
 
-##VII.Create video ads
+## VII.Create video ads
 
 1)Complete Delegate of  the video in where need to insert video. If you use video in different interface, you can complete only one time in AppDelegate object, and provide external method to call positions.
 
@@ -538,7 +539,7 @@ self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegat
 
 ```
 
-##VIII.Create direct advertising, exchanging advertising and  their campaigns
+## VIII.Create direct advertising, exchanging advertising and  their campaigns
 
 1.Login Adview’s official website and enter publishers end,  Ads management → creative database：
 
@@ -559,7 +560,7 @@ self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegat
 
 6)The steps of creating exchanging ad is the same as the direct ad. 
 
-##IX.Configurate Xcode project
+## IX.Configurate Xcode project
 
 1.set the value of Other Linker Flags in the project , and tag “-ObjC”
 
@@ -805,7 +806,7 @@ the below contents are the framework needed by various ad platforms ( framework 
 5.Compile and connect your project and the interstitial can be shown.
 
 
-##X. AdView background app settings
+## X. AdView background app settings
 
 1)app settings
 
@@ -841,7 +842,7 @@ Region optimization fuction refers to the phones at home show the domestic confi
 ![Region](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/10.5.png)
 
 
-##XI.Configurate files offline
+## XI.Configurate files offline
 
 ![configure](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/11.1.png)
 
@@ -863,12 +864,12 @@ Region optimization fuction refers to the phones at home show the domestic confi
 
 
 
-##XII.Delete the unnecessary ad platforms
+## XII.Delete the unnecessary ad platforms
 
 It’s quite easy to delete the unnecessary interstitials. You just have to delete  the relevant interstitial files under AdInstlSDK/AdNetworks  in the project and re-compile. 
 We suggest only delete the project quote when deleting interstitials from the project, instead of deleting the interstitials from the hardware. Remain the interstitial development library in case for need.
 
-##XIII.Add customized ad platform (interstitial)
+## XIII.Add customized ad platform (interstitial)
 
 Sometimes publisher may want to add an ad platfrom which is not contains in the integration. Adview can realize this demands.
 There is “ customize ad platform” in “add ad platform”
@@ -1052,7 +1053,7 @@ Publisher should register in relevant platforms first to get the corresponding a
 
 
  
-##XIV. FAQ
+## XIV. FAQ
 
 Q：why AdInstl  cannot show ads?
 A：The most likely reason is that you havenot added additional link  options which enable your interstitial development library to load into your application. You can refer to the 5th step of “insert AdView integration in the interface of the  project”.

@@ -640,8 +640,8 @@ self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegat
 
 the below contents are the framework needed by various ad platforms ( framework of Adview must add)
 
-|  	Ad platform     |     Framework                     |
-| --------------------- | --------------------------------- |
+|  	Ad platform     |     Framework        |
+| --------------------- | -------------------- |
 | AdView                |   AdSupport.framework(optional) CoreLocation.framework|
                         |AddressBook.framework      libc++.tbd(optional) |
                         |	libsqlite3.tbd               libxml2.tbd |

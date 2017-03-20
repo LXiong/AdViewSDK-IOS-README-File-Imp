@@ -640,23 +640,23 @@ self.nativeManager=[AdNativeManager managerWithAdNativeKey:NATIVEKEY WithDelegat
 
 the below contents are the framework needed by various ad platforms ( framework of Adview must add)
 
-|  	Ad platform     |     Framework        |
-| --------------------- | -------------------- |
-| AdView                |   AdSupport.framework(optional) CoreLocation.framework|
-                        |AddressBook.framework      libc++.tbd(optional) |
-                        |	libsqlite3.tbd               libxml2.tbd |
-| AdChina（易传媒）       | AudioToolbox.framework      AVFoundation.framework |
-                        | CoreGraphics.framework      CoreLocation.framework |
-		        | CoreMotion.framework        CoreTelephony.framework |
-		        | EventKit.framework           EventKitUI.framework |
-		        |  	Foundation.framework        libz.tbd |
-	        	| MapKit.framework            MediaPlayer.framework |
-		        |  MessageUI.framework        QuartzCore.framework |
-		        |  SystemConfiguration.framework  |
-		        |  	StoreKit.framework           UIKit.framework |
-		        |  libiconv.2.4.0.tbd            libsqlite3.0.tbd |
-		        | libc++.tbd(optional)  |
-| InMobi                | CoreLocation.framework        EventKit.framework |
+|  	Ad platform              |     Framework                                                      |
+| ------------------------------ | ------------------------------------------------------------------ |
+| AdView                         |   AdSupport.framework(optional) CoreLocation.framework|
+                                 |AddressBook.framework      libc++.tbd(optional) |
+                                 |	libsqlite3.tbd               libxml2.tbd |
+| AdChina（易传媒）                | AudioToolbox.framework      AVFoundation.framework |
+                                 | CoreGraphics.framework      CoreLocation.framework |
+		                 | CoreMotion.framework        CoreTelephony.framework |
+		                 | EventKit.framework           EventKitUI.framework |
+		                 |  	Foundation.framework        libz.tbd |
+	        	         | MapKit.framework            MediaPlayer.framework |
+		                 |  MessageUI.framework        QuartzCore.framework |
+		                 |  SystemConfiguration.framework  |
+		                 |  	StoreKit.framework           UIKit.framework |
+		                 |  libiconv.2.4.0.tbd            libsqlite3.0.tbd |
+		                 | libc++.tbd(optional)  |
+| InMobi                         | CoreLocation.framework        EventKit.framework |
                  | EventKitUI.framework          Social.framework |
 		 | libz.tbd                      AdSupport.framework |
 		 | AudioToolbox.framework       AVFoundation.framework |

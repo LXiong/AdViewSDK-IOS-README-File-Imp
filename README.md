@@ -96,7 +96,7 @@ Integrated iOS SDK includes the following contents:
     Position of video ad slot ID: App Management— edit – video ad slot module
     
     
-    ![Video](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/1.4.png)
+![Video Id](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/1.4.png)
     
     
     

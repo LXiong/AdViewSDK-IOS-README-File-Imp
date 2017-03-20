@@ -642,9 +642,9 @@ the below contents are the framework needed by various ad platforms ( framework 
 
 |  	Ad platform     |     Framework                                                                        |
 | --- | --- |
-| AdView |   AdSupport.framework(optional) CoreLocation.framework|
-         |AddressBook.framework      libc++.tbd(optional) |
-         |	libsqlite3.tbd               libxml2.tbd |
+| AdView         |   AdSupport.framework(optional) CoreLocation.framework|
+                 |AddressBook.framework      libc++.tbd(optional) |
+                 |	libsqlite3.tbd               libxml2.tbd |
 | AdChina（易传媒）| AudioToolbox.framework      AVFoundation.framework |
                  | CoreGraphics.framework      CoreLocation.framework |
 		 | CoreMotion.framework        CoreTelephony.framework |

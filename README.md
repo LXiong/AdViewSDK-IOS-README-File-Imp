@@ -113,7 +113,10 @@ Integrated iOS SDK includes the following contents:
   2）Open your project in Xcode, here we take the AdViewAll project along with AdViewSDK as an example.
   
   
+  
     ![SDK Zip1](https://raw.githubusercontent.com/vinith-cit/images-for-ios-SDK/master/2.2.png)
+    
+    
 
      
 

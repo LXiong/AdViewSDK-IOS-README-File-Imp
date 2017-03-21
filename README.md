@@ -3,9 +3,9 @@
 
 ## Contents
 
-[I.Register and get SDK](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#i----register-and-get-sdk)
+[I.Register and get SDK](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#iregister-and-get-sdk)
 
-[II.Add  SDK](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#ii---add--sdk)	
+[II.Add  SDK](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#iiadd--sdk)	
 
 [III.Create banner ads](https://github.com/vinith-cit/AdViewSDK-IOS-README-File-Imp#iiicreate-banner-ads)	
 
